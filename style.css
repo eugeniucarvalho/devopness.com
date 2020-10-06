@@ -1,0 +1,105 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "STARWARS";
+    background: rgba(0, 0, 0, .05);
+}
+
+.app {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.app__header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 64px;
+    background: #efefef;
+    box-shadow: 0 0 4px #0000005c;
+}
+
+.app__logo {
+    height: 64px;
+}
+
+.app__splash-screen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10000;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app__splash-screen--hidden {
+    display: none;
+}
+
+.app__input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.app__input {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    text-shadow: 0 0 black;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.app__list {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-y: auto;
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 0px 40px;
+}
+
+.app__list-item {
+    padding: 12px 0px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__list-stop {}
+
+.app_button {
+    position: relative;
+    padding: 12px 20px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000000c4;
+    cursor: pointer;
+}
